@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gruppo', cursive;
+}
+
+section{
+    padding: 100px;
+    background: #111;
+    height: 100vh
+}
+
+section header {
+    position: absolute;
+    top: 0;
+    lefT: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+section header .logo {
+    position: relative;
+    font-size: 24px;
+    color: #FBFEF9;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+section header .toggle {
+    position: relative;
+    color: #FBFEF9;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+section .container {
+    position: absolute;
+    display: flex;
+    height: calc(100% - 200px);
+    width: calc(100% - 200px);
+    z-index: 100;
+}
+
+section .container .box {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 10px solid #111;
+}
+
+section .container .box:last-child {
+    border-right: none;
+}
+
+section .container .box .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);   
+}
+section .container .box .imgBox.active {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    height: calc(100% - 200px);
+    width: calc(100% - 200px);
+    z-index: 1000;
+    opacity: 1;
+    filter: grayscale(0);
+
+}
+section .container .box .imgBox:hover {
+    opacity: 1;
+    filter: grayscale(0);   
+}
+
+section .container .box .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+
+}
+.footer .social{
+    position: relative;
+    display: flex;
+}
+
+.footer .social li{
+    list-style: none;
+}
+
+.footer .social li a{
+    color: #FBFEF9;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer .social li a:hover {
+    color: #52FFB8;
+}
+
+.footer .copyrightText {
+    color: #FBFEF9;
+}

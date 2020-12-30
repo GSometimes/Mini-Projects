@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+    <title>Landing Page</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Food, Friends, Memories</a>
+            <div class="toggle"><i class="fas fa-bars"></i></div>
+        </header>
+        <div class="container">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="https://res.cloudinary.com/dvug8hy5k/image/upload/v1609315107/Portfolio1/sara-scarpa-wKmkzbrLpMM-unsplash_zzc7ep.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="https://res.cloudinary.com/dvug8hy5k/image/upload/v1609315108/Portfolio1/danielle-macinnes-logv9s7f67o-unsplash_e5gz5t.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="https://res.cloudinary.com/dvug8hy5k/image/upload/v1609315103/Portfolio1/kym-ellis-aF1NPSnDQLw-unsplash_1_p09tas.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="https://res.cloudinary.com/dvug8hy5k/image/upload/v1609315109/Portfolio1/zan-WrueFKpTlQs-unsplash_rmvw5u.jpg">
+                    </div>
+                </div>
+        </div>
+        <div class="footer">
+            <ul class="social">
+                <li><a href="https://www.linkedin.com/in/gore-sometimes/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/GSometimes" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li><a href="mailto:gsometimes@outlook.com">Email</a></li>
+            </ul>
+            <p class="copyrightText">© 2020 Designs by Sometimes</p>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        const imgBox = document.querySelectorAll('.imgBox')
+        imgBox.forEach(popup => popup.addEventListener('click', ()=>{
+        popup.classList.toggle('active')
+        }))
+    </script>
+</body>
+</html>
