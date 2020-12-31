@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href ="styles.css">
+</head>
+<body>
+    <section>
+        <div class="light">
+            <img src="images/light.png" alt="">
+        </div> 
+        <img src="images/diya1.png" class="layer" data-speed="-6"> 
+        <img src="images/diya2.png" class="layer" data-speed="10"> 
+        <img src="images/diya3.png" class="layer" data-speed="6"> 
+        <img src="images/text1.png" class="layer" data-speed="-8"> 
+        <img src="images/text2.png"> 
+    </section>
+    <script type="text/javascript">
+        document.addEventListener('mousemove', parallax);
+        function parallax(e){
+            this.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed')
+                const x = (window.innerWidth - e.pageX*speed)/100
+                const y = (window.innerWidth - e.pageY*speed)/100
+                
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+                
+            })
+        }
+    </script>
+</body>
+</html>
