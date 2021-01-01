@@ -22,6 +22,11 @@ header .I-am {
     left: 3%;
 }
 
+header a, a:active, a:hover, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     display: flex;
     width: 90vw;
