@@ -67,12 +67,13 @@ header a, a:active, a:hover, a:visited{
 }
 
 .panel h1 {
-    font-size: 24px;
+    font-size: 36px;
     position: absolute;
     bottom: 20px;
     left: 20px;
     margin: 0;
     opacity: 0;
+    transition: opacity 0.5s ease-out;
 }
 
 .panel.active {
