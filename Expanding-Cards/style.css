@@ -14,7 +14,9 @@ body{
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-}
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
 
 header .I-am {
     position: absolute;
@@ -30,20 +32,38 @@ header a, a:active, a:hover, a:visited{
 .container {
     display: flex;
     width: 90vw;
+    position: absolute;
+    top: 10%;
+}
+
+.frame {
+    border: 5px solid black;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 90vw;
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 700ms ease-in;
+    margin-bottom: 10px;
 }
 
 .panel {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 30vh;
     border-radius: 20px;
     color: #fff;
     cursor: pointer;
     flex: 0.5;
-    margin: 10px;
+    margin: 5px;
     position: relative;
-    -webkit-transition: all 700ms ease-in;
+    transition: flex 700ms ease-in;
+    border: 5px solid black;
+
 }
 
 .panel h1 {
@@ -61,7 +81,7 @@ header a, a:active, a:hover, a:visited{
 
 .panel.active h1 {
     opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+    transition: opacity 0.5s ease-in 0.5s;
 }
 
 @media (max-width: 480px) {
