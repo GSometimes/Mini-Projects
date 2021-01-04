@@ -5,14 +5,14 @@ import styled from 'styled-components'
 const Navbar = styled.nav`
     height: 60px;
     background: #000;
-    padding: 0rem calc((100vw - 1300px) /2);
+    padding: 0rem calc((100vw - 1800px) /2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     `;
 
 const Logo = styled(Link)`
-    color: #6B0504;
+    color: #ffb347;
     padding-left: 1.5rem;
     text-decoration: none;
     font-size: 2rem;
@@ -22,11 +22,14 @@ const Logo = styled(Link)`
 const NavItems = styled.div``;
 
 const NavbarLink = styled(Link)`
-    color: #6B0504;
+    color: #fff;
     text-decoration: none;
     padding: 1rem;
+    font-size: 2rem;
     font-weight: bold;
-    `;
+    &:hover {
+        color: #ffb347;
+    }`;
 
 const Header = () => {
     return (

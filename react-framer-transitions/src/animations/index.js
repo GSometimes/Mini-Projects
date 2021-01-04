@@ -36,6 +36,6 @@ export const animationThree = {
 
 
 export const transition = {
-    duration: 0.5
+    duration: 0.3
 }
 

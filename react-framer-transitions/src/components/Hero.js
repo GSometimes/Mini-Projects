@@ -9,6 +9,8 @@ const Section = styled.section`
     justify-content: flex-start;
     align-items: flex-end;
     margin-top: -60px;
+    padding: 0rem calc((100vw - 1800px) /2)
+    
     `;
 
 const Container = styled.div`
@@ -18,6 +20,8 @@ const Container = styled.div`
     background-color: rgba(0,0,0,0.4);
     margin: 1rem;
     border-radius: 10px;
+    
+    
     
     h1{
         font-size: clamp(2rem, 7vw, 5rem);
