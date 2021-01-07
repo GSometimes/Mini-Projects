@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 :root {
-    --line-border-fill: #3498db;
+    --line-border-fill: #373737;
     --line-border-empty: #e0e0e0;
 }
 
@@ -11,6 +11,8 @@
 
 
 body {
+    /* background-image: url('images/winter.jpg'); */
+    background-size: cover;
     background-color: #f6f7fb;
     font-family: 'Muli', sans-serif;
     display: flex;
@@ -23,6 +25,8 @@ body {
 
   .container {
       text-align: center;
+      position: absolute;
+      bottom: 0;      
   }
 
   .progress-container {
@@ -31,7 +35,7 @@ body {
       position: relative;
       margin-bottom: 30px;
       max-width: 100%;
-      width: 350px;
+      width: 500px;
   }
 
   .progress-container::before {
@@ -63,8 +67,8 @@ body {
       background-color: #fff;
       color: #999;
       border-radius: 50%;
-      height: 30px;
-      width: 30px;
+      height: 40px;
+      width: 80px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -101,4 +105,18 @@ body {
       cursor: not-allowed;
   }
 
-  
+
+  .frame {
+    /* border: 5px solid black; */
+    /* border-radius: 20px; */
+    /* top: 0; */
+    position: absolute;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 700ms ease-in;
+    margin-bottom: 10px;
+}
