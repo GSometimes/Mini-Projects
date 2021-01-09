@@ -8,14 +8,50 @@
 </head>
 <body>
     <header>
-        <a href="/" class="logo">MODERN. by Sometimes</a>
+        <a href="index.html" class="logo">MODERN. by Sometimes</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </header>
-     <ul>
-         <li><a href="/about">About</a></li>
-         <li><a href="/services">Services</a></li>
-         <li><a href="/contact">Contact</a></li>
-     </ul>
-
+    <section class="banner">
+        <div class="imgBox">
+            <img src="images/kitchen.jpg" alt="" class="active">
+            <img src="images/livingspace.jpg" alt="">
+            <img src="images/bedroom.jpg" alt="">
+            <img src="images/patio.jpg" alt="">
+        </div>
+        <div class="contentBox">
+            <div class="active">
+                <h2>Slide Text One</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#">Details</a>
+            </div>
+            <div>
+                <h2>Slide Text Two</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#">Details</a>
+            </div>
+            <div>
+                <h2>Slide Text Three</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#">Details</a>
+            </div>
+            <div>
+                <h2>Slide Text Four</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" id="details">Details</a>
+            </div>
+        </div>
+        <div class="leftControls">
+            <i onclick="prevSlide();prevSlideText();"></i>
+        </div>
+        <div class="rightControls">
+            <i onclick="nextSlide();nextSlideText();"></i>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

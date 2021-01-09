@@ -7,15 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background: #ff0;
-}
 
 header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     z-index: 10000;
@@ -23,11 +20,15 @@ header {
 }
 
 header .logo {
-    positon: relative;
+    position: relative;
     color: #fff;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+}
+
+.logo:hover{
+    color: #ffeb3b;
 }
 
 header ul {
@@ -49,3 +50,146 @@ header ul li a {
     text-decoration: none;
 }
 
+ul li a:hover{
+    color: #ffeb3b;
+}
+
+div.active a:hover {
+    background-color: #ffeb3b;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.banner .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: 0.5s;
+    background-position: center;
+}
+
+.banner .imgBox img.active {
+    opacity: 1;
+}
+
+.leftControls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 80px;
+}
+
+.leftControls i {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background:rgba(255, 255, 255, 0.5);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.leftControls i:hover{
+    background:  #ffeb3b; 
+}
+
+.leftControls i:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid #111;
+    border-bottom: 3px solid #111;
+    transform: rotate(45deg);
+}
+
+.rightControls {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 80px;
+}
+
+.rightControls i {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background:rgba(255, 255, 255, 0.5);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rightControls i:hover{
+    background:  #ffeb3b; 
+}
+
+.rightControls i:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid #111;
+    border-bottom: 3px solid #111;
+    transform: rotate(225deg);
+}
+
+.contentBox {
+    position: absolute;
+    bottom: 0;
+    max-width: 700px;
+}
+
+.contentBox div {
+    display: none;
+}
+
+.contentBox div.active {
+    display: block;
+    padding: 30px;
+    padding-left: 50px;
+    background: rgba(0, 0, 0, 0.2); 
+}
+
+.contentBox div h2 {
+    color: #fff;
+    font-size: 2em;
+}
+
+.contentBox div p {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.contentBox div a {
+    color: #111;
+    font-size:  1.1em;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+}
