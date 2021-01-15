@@ -23,4 +23,5 @@ function letters(str) {
     return str;
 }
 
-letters("abce")
+console.log(letters("abce"))
+
