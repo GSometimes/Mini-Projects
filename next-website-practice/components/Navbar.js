@@ -18,7 +18,7 @@ const Navbar = () => {
         <Nav>
             <div>
                 <Link href="/" passHref>
-                    <StyledLink>PRSSD</StyledLink>
+                    <StyledLink>PRSSD.</StyledLink>
                 </Link>
             </div>
             <div>
