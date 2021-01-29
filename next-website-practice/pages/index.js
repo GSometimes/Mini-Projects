@@ -7,7 +7,7 @@ width: 100vw;
 display: flex;
 justify-content: center;
 align-items: center;
-background: #fff;
+background: #124E78;
 position: fixed;
 `
 

@@ -2,11 +2,13 @@ import Head from 'next/head'
 import styled from 'styled-components'
 
 const Hero = styled.div`
-height: 90vh;
+height: calc(100vh - 30px);
+width: 100vw;
 display: flex;
 justify-content: center;
 align-items: center;
-background: #fff;`
+background: #BBC2E2;
+position: fixed;`
 
 const Heading = styled.h1`
 color: #000;

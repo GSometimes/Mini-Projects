@@ -14,7 +14,7 @@ width: 100vw;`
 const Footer = () => {
     return (
         <FooterSection>
-            <p>PRSSD. Sometimes</p>
+            <p>PRSSD. by Sometimes</p>
         </FooterSection>
     )
 }
