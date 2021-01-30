@@ -1,18 +1,23 @@
 import Head from 'next/head'
 import styled from 'styled-components'
 
+const imgUrl = 'https://res.cloudinary.com/dvug8hy5k/image/upload/v1611982572/Portfolio1/alex-VxtWBOQjGdI-unsplash_nedb1v.jpg'
+
 const Hero = styled.div`
 height: calc(100vh - 30px);
 width: 100vw;
 display: flex;
 justify-content: center;
 align-items: center;
-background: #124E78;
+background-image: url(${imgUrl});
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 position: fixed;
 `
 
 const Heading = styled.h1`
-color: #000;
+color: #fff;
 font-size: 10rem;
 font-weight: 900;`
 

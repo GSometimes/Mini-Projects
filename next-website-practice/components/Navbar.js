@@ -26,11 +26,11 @@ const Navbar = () => {
                     <StyledLink>BEANS</StyledLink>
                 </Link>
 
-                <Link href="/brew" passHref>
-                    <StyledLink>BREW</StyledLink>
-                </Link>
                 <Link href="/roast" passHref>
                     <StyledLink>ROAST</StyledLink>
+                </Link>
+                <Link href="/brew" passHref>
+                    <StyledLink>BREW</StyledLink>
                 </Link>
             </div>
         </Nav>
