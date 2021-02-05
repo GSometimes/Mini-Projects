@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+/* font-family: 'Josefin Slab', serif; */
+/* font-family: 'Patrick Hand', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 200vh;
+  }
+  
+  .container {
+    clip: rect(0, auto, auto, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+  }
+  
+  .container_solid {
+    background: white;
+    top: 0;
+  }
+  
+  .title_wrapper {
+    position: fixed;
+    display: block;  
+    margin: auto;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .title_wrapper h1 {
+    text-align: center;
+    font-size: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Josefin Slab', serif;
+  }
+  
+  .container_solid .title_wrapper h1 {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(ramen.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: black;
+  }
+  
+  .container_image {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(ramen.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    top: 100vh;
+  }
+  
+  .container_image .title_wrapper h1 {
+    color: white;
+  }
+  
+  section {
+    min-height: 100vh;
+    padding: 2em;
+    margin: auto;
+    max-width: 800px;
+  }
+  
+  section h1 {
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 32px;
+    padding: 20px;
+}
+
+section p {
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+}
+  
