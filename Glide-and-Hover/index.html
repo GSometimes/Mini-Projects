@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/glide.core.min.css">
+    <script src="./js/main.js"></script>
+    <script src="./js/hover.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
+    <script src="./js/glide.min.js"></script>
+
+    <title>Glide and Hover</title>
+</head>
+    <body>
+        <section> 
+            <nav>
+                <h5>Jrny.</h5>
+                <ul>
+                    <li>Home</li>
+                    <li>Cities</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                </div>
+            </nav>
+            <div class="side-indicator">
+                <div class="line"></div>
+                <div class="index one">
+                    <p>1</p>
+                </div>
+                <div class="index two">
+                    <p>2</p>
+                </div>
+                <div class="index three">
+                    <p>3</p>
+                </div>
+                <div class="index four">
+                    <p>4</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="text-wrapper">
+                    <div class="text">
+                        <div id="title">
+                            <h4>SANTA MONICA</h4>
+                            <h4>CHICAGO</h4>
+                            <h4>NEW YORK</h4>
+                            <h4>SONOMA COUNTY</h4>
+                        </div>
+                        <div id="description">
+                            <p>When one thinks of Santa Monica, the attraction of the Pier inevitably comes to mind. Its red and yellow Ferris wheel is a city icon. The Pier offers Pacific Park, a full service amusement park, combined with plenty of restaurants, bars, and souvenir shops, as well as an entertaining arcade with more than 200 games.</p>
+                            <p>Cloud Gate, aka "The Bean," is a public sculpture by Indian-born British artist Sir Anish Kapoor, that is the centerpiece of AT&T Plaza at Millennium Park in the Loop community area of Chicago, Illinois. ... Kapoor's design was inspired by liquid mercury and the sculpture's surface reflects and distorts the city's skyline.</p>
+                            <p>The Brooklyn Bridge looms majestically over New York City's East River, linking the two boroughs of Manhattan and Brooklyn. Since 1883, its granite towers and steel cables have offered a safe and scenic passage to millions of commuters and tourists, trains and bicycles, pushcarts and cars.</p>
+                            <p>Sonoma is a historic city in northern California at the heart of the renowned Sonoma Valley winemaking region. It's known for its art galleries and the colonial-era Sonoma Plaza. Surrounding this plaza are significant 19th-century adobe buildings including Mission San Francisco Solano and the Sonoma Barracks, once used by the Mexican military. Seasonally, the square hosts a popular weekly farmer's market.</p>
+                        </div>
+                        <div class="btn">
+                            <p>Explore</p>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="glide">
+                    <div class="glide_cover">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                              <li class="glide__slide">
+                                  <div class="slide one">
+                                      <p>Santa Monica Pier, California</p>
+                                      <div class="rating">
+                                          <div class="circle active"></div>
+                                          <div class="circle active"></div>
+                                          <div class="circle active"></div>
+                                          <div class="circle active"></div>
+                                          <div class="circle"></div>
+                                      </div>
+                                      <div class="slider-image">
+                                          <img src="images/la2.jpg" alt=""/>
+                                          <div class="bookmark">
+                                              <i class="fa fa-bookmark"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="glide__slide">
+                                <div class="slide two">
+                                    <p>The Bean, Chicago</p>
+                                    <div class="rating">
+                                        <div class="circle active"></div>
+                                        <div class="circle active"></div>
+                                        <div class="circle active"></div>
+                                        <div class="circle active"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="images/chi2.jpg" alt=""/>
+                                        <div class="bookmark">
+                                            <i class="fa fa-bookmark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>
+                              <li class="glide__slide">
+                                <div class="slide three">
+                                    <p>Brooklyn, New York</p>
+                                    <div class="rating">
+                                        <div class="circle active"></div>
+                                        <div class="circle active"></div>
+                                        <div class="circle active"></div>
+                                        <div class="circle active"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="images/ny2.jpg" alt=""/>
+                                        <div class="bookmark">
+                                            <i class="fa fa-bookmark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>
+                              <li class="glide__slide">
+                                <div class="slide four">
+                                    <p>Sonoma County, California</p>
+                                    <div class="rating">
+                                        <div class="circle active"></div>
+                                        <div class="circle active"></div>
+                                        <div class="circle active"></div>
+                                        <div class="circle active"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="images/norcal2.jpg" alt=""/>
+                                        <div class="bookmark">
+                                            <i class="fa fa-bookmark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div data-glide-el="controls" class="controls">
+                        <div data-glide-dir="<" id="prev">
+                            <i class="fa fa-arrow-left"></i>
+                        </div>
+                        <div data-glide-dir="<" id="next">
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
