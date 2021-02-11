@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    overflow-y: hidden;
+}
+
+.night {
+    height: 100vh;
+    width: 100vw;
+    background: url('./images/Img_1.png');
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0,0,0,0.4);
+    overflow-x: hidden;
+    
+}
+
+.surface {
+    height: 155px;
+    width: 500%;
+    background: url('./images/Img_02.png');
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: move 6s linear infinite;
+    filter: grayscale(100%);
+
+}
+
+.car {
+    position: absolute;
+    bottom: 5.75%;
+    left: 24%;
+    animation: suspension 1s linear infinite;
+    filter: grayscale(100%);
+}
+
+@keyframes move {
+    100%{transform: translateX(-2950px)}
+}
+
+@keyframes suspension {
+    100% {
+        transform: translateY(-1px);
+    }
+    50% {
+        transform:translateY(2px);
+    }
+    0% {
+        transform: translateY(-1px);
+    }
+}
