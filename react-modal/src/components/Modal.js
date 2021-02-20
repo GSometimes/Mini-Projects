@@ -15,23 +15,25 @@ const Background = styled.div`
 
 const ModalWrapper = styled.div`
   width: 800px;
-  height: 500px;
+  height: 400px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #000;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   position: relative;
   z-index: 10;
   border-radius: 10px;
+  padding: 20px;
 `;
 
-const ModalImg = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 10px 0 0 10px;
-  background: #000;
-`;
+// const ModalImg = styled.img`
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 10px 0 0 10px;
+//   background: #000;
+//   background-size: cover;
+// `;
 
 const ModalContent = styled.div`
   display: flex;
@@ -42,6 +44,7 @@ const ModalContent = styled.div`
   color: #141414;
   p {
     margin-bottom: 1rem;
+    font-size: 18px;
   }
   button {
     padding: 10px 24px;
@@ -103,11 +106,10 @@ export const Modal = ({ showModal, setShowModal }) => {
         <Background onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
-              <ModalImg src='./image.jpg' alt='camera' />
+              {/* <ModalImg src={require('./modal.jpg')} alt='camera' /> */}
               <ModalContent>
-                <h1>Are you ready?</h1>
-                <p>Get exclusive access to our next launch.</p>
-                <button>Join Now</button>
+                <h1>Day 50 of 100.</h1>
+                <p>I hit day 50 of code today and wanted to say thank you to all of you for the support, kindness, and motivation. Becoming a developer has been one of the hardest things I've ever done and I wouldn't have made it to 50 days if it weren't for those of you that are there when I'm feeling like an imposter or when I am impulsively inspired and want to try to create something different. Thank you for coming along with me for the first 50 days. I'm excited to go through the next 50 and see what I create and get to share.</p>
               </ModalContent>
               <CloseModalButton
                 aria-label='Close modal'
