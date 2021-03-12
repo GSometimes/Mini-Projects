@@ -31,7 +31,7 @@ const ModalWrapper = styled.div`
 //   width: 100%;
 //   height: 100%;
 //   border-radius: 10px 0 0 10px;
-//   background: #000;
+//   background-image: url('./quote.jpg');
 //   background-size: cover;
 // `;
 
@@ -106,7 +106,6 @@ export const Modal = ({ showModal, setShowModal }) => {
         <Background onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
-              {/* <ModalImg src={require('./modal.jpg')} alt='camera' /> */}
               <ModalContent>
                 <h1>Day 50 of 100.</h1>
                 <p>I hit day 50 of code today and wanted to say thank you to all of you for the support, kindness, and motivation. Becoming a developer has been one of the hardest things I've ever done and I wouldn't have made it to 50 days if it weren't for those of you that are there when I'm feeling like an imposter or when I am impulsively inspired and want to try to create something different. Thank you for coming along with me for the first 50 days. I'm excited to go through the next 50 and see what I create and get to share.</p>

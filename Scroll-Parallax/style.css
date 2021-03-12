@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #ffee57;
+    background: #124E78;
 }
 
 h3 {
@@ -15,7 +15,7 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: -100px;
-    color: #0e112e;
+    color: #6e0e0a;
     font-size: 4em;
 }
 
@@ -25,7 +25,7 @@ section {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #0e112e;
+    background: #CFCCD6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@ section {
     z-index: 1;
     font-size: 10vw;
     color: transparent;
-    -webkit-text-stroke: 2px #0e112e;
+    -webkit-text-stroke: 2px #6e0e0a;
     text-align: center;
     width: 100%;
 }
@@ -62,9 +62,9 @@ section {
 .container {
     position: relative;
     margin-top: 200vh; 
-    background: #0e112e;
+    background: #CFCCD6;
     padding: 100px;
-    color: #fff;
+    color: #6e0e0a;
 }
 
 .container h2 {

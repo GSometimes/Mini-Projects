@@ -83,6 +83,8 @@ body::before {
     border-radius: 50%;
     box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.5);
     animation: bounce 2s linear infinite;
+    
+    
 }
 
 @keyframes bounce {

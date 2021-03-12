@@ -48,32 +48,37 @@
 
 @keyframes run {
     0% {
-        left: 20%;
+        left: 25%;
         opacity: 0; 
     }
     2% {
-        left: 20%;
+        left: 25%;
         opacity: 1;
     }
     4% {
-        left: 20%;
+        left: 25%;
         opacity: 0;
     }
     6% {
-        left: 20%;
+        left: 25%;
         opacity: 1;
     }
     8% {
-        left: 20%;
+        left: 25%;
         opacity: 0;
     }
     10% {
-        left: 20%;
+        left: 25%;
+        opacity: 1;
+    }
+
+    99% {
+        left: 75%;
         opacity: 1;
     }
     100% {
-        left: 80%;
-        opacity: 1;
+        left: 75%;
+        opacity: 0;
     }
     
 }

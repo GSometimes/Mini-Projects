@@ -1,5 +1,7 @@
 {
     "editor.tabCompletion": "on",
     "files.autoSave": "afterDelay",
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.formateOnSave": true,
+    "git.ignoreLimitWarning": true,
 }

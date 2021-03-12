@@ -16,7 +16,7 @@ section{
 section header {
     position: absolute;
     top: 0;
-    lefT: 0;
+    left: 0;
     width: 100%;
     height: 100px;
     padding: 20px 100px;
@@ -87,6 +87,7 @@ section .container .box .imgBox:hover {
     opacity: 1;
     filter: grayscale(0);   
 }
+
 
 section .container .box .imgBox img {
     position: absolute;

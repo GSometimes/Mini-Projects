@@ -35,5 +35,5 @@ function fib(n) {
         // The only case when we ACTUALLY return A NUMBER
         return n;
         // Otherwise keep REINVOKING the function until it boils down to PREVIOUS solution
-    } else return fib(n - 1) + fib2(n - 2);
+    } else return fib(n - 1) + fib(n - 2);
 }
