@@ -20,16 +20,6 @@ body {
     background-position: center;
 }
 
-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 70px;
-    color: rgba(136, 136, 136, 0.5);
-    z-index: -1;
-}
-
 div {
     display: flex;
     justify-content: center;
