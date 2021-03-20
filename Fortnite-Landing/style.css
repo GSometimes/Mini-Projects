@@ -1,0 +1,182 @@
+@font-face{
+    font-family: fn;
+    src:url(BurbankBigCondensed-Black.otf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(-90deg, #2f80ed, #55caf2);
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: url('BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.drop {
+    border-radius: 100%;
+    position: relative;
+    left: 0px;
+    top: 40px;
+    height: 15em;
+    width: 140px;
+    overflow: hidden;
+}
+
+.drop:before, .drop:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+.drop:after{
+    background: rgb(52, 152, 219);
+    background: linear-gradient(rgba(52, 255, 255, 1) 0%, rgba(52, 152, 219, 1) 10%, rgba(152, 252,219,1) 100%);
+    border-radius: 100% 0 50% 0;
+    left: 0px;
+    bottom: 0;
+    width: inherit;
+    height: 5em;
+    opacity: 0.7;
+    animation: surface 3s linear infinite;
+}
+
+@keyframes surface {
+    50% {
+        border-radius: 0 75% 0 75%;
+        opacity: 0.5;
+        height: 3.5em;
+    }
+}
+
+.bottle {
+    height: 300px;
+    width: 135px;
+    margin-left: 2px;
+    clip-path:polygon(92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.979296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%);
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.img {
+    width: 214px;
+    position: absolute;
+    top: 55.8%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.top {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.menu {
+    display: inline-block;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    font-family: arial;
+    font-size: 14px;
+    color: white;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 100px;
+    letter-spacing: 2px;
+}
+
+.fa {
+    font-size: 20px;
+}
+
+.icons {
+    display: inline-block;
+    margin-left: 350px;
+}
+
+.icons ul {
+    list-style: none;
+}
+
+.icons ul li {
+    display: inline-block;
+    color: white;
+    margin-left: 50px;
+}
+
+.content {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.msg {
+    font-family: fn;
+    font-size: 10em;
+    color: white;
+}
+
+.msg2 {
+    font-family: fn;
+    font-size: 1.5em;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.btn1, .btn2 {
+    width: 210px;
+    height: 40px;
+    display: inline-block;
+    background-color: #ffff00;
+    transform: skewX(-15deg);
+    font-family: fn;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.btn1:before,
+.btn2:before {
+    content: "GET IT NOW";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewX(-15deg);
+}
+
+.btn2 {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn2:before {
+    content: "WATCH TRAILER"
+}
