@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://res.cloudinary.com/dvug8hy5k/image/upload/v1616866750/Plate%20to%20Page/pepe-nero-FHtP6sKF7bY-unsplash_bjmz4m.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container .navbar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+
+.container .navbar .logo {
+    color: #EEE6D3;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.container .navbar .toggle {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    color: #EEE6D3;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: #EEE6D3;
+    font-size: 100px;
+}
+
+p {
+    color: #EEE6D3;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background: #EEE6D3;
+    transition: transform 0.5s;
+    /* background-position: center; 
+        background-size: cover;*/
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+h5 {
+    text-shadow: 0 0 5px #999;
+}
+
+.card p {
+    color: black;
+}
