@@ -18,7 +18,6 @@ function preFizz(n) {
             fizzed.push(i)
         }
     }
-
     return fizzed;
 }
 
