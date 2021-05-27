@@ -21,7 +21,7 @@ useEffect(() => {
     if(window.innerWidth > 768 && isOpen) {
       setIsOpen(false)
     }
-  };
+  }
 
   window.addEventListener('resize', hideMenu)
 

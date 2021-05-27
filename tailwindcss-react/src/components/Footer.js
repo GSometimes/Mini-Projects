@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <>
         <div className="flex justify-center items-center h-16 bg-black text-white">
-            <p>Copyright © EGG All Rights Reserved</p>
+            <p>Copyright © WINE All Rights Reserved</p>
         </div>
             
         </>
