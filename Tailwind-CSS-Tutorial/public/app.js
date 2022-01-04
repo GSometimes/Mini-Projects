@@ -21,7 +21,6 @@ bars.addEventListener("click", () => {
   }
 });
 
-// hover:text-purple-600 duration-300
 
 menu.addEventListener("click", () => {
   menu.classList.add("hidden");
